@@ -16,20 +16,7 @@
 		933289E6196BDB3B0058946B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933289E4196BDB3B0058946B /* Main.storyboard */; };
 		933289E9196BDB3B0058946B /* XCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 933289E8196BDB3B0058946B /* XCViewController.m */; };
 		933289EB196BDB3B0058946B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933289EA196BDB3B0058946B /* Images.xcassets */; };
-		933289F2196BDB3B0058946B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933289F1196BDB3B0058946B /* XCTest.framework */; };
-		933289F3196BDB3B0058946B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933289D2196BDB3B0058946B /* Foundation.framework */; };
-		933289F4196BDB3B0058946B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933289D6196BDB3B0058946B /* UIKit.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		933289F5196BDB3B0058946B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 933289C7196BDB3B0058946B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 933289CE196BDB3B0058946B;
-			remoteInfo = TinyPush;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		933289CF196BDB3B0058946B /* TinyPush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyPush.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +33,6 @@
 		933289E7196BDB3B0058946B /* XCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCViewController.h; sourceTree = "<group>"; };
 		933289E8196BDB3B0058946B /* XCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XCViewController.m; sourceTree = "<group>"; };
 		933289EA196BDB3B0058946B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		933289F0196BDB3B0058946B /* TinyPushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyPushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		933289F1196BDB3B0058946B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -58,16 +44,6 @@
 				933289D5196BDB3B0058946B /* CoreGraphics.framework in Frameworks */,
 				933289D7196BDB3B0058946B /* UIKit.framework in Frameworks */,
 				933289D3196BDB3B0058946B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		933289ED196BDB3B0058946B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				933289F2196BDB3B0058946B /* XCTest.framework in Frameworks */,
-				933289F4196BDB3B0058946B /* UIKit.framework in Frameworks */,
-				933289F3196BDB3B0058946B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +63,6 @@
 			isa = PBXGroup;
 			children = (
 				933289CF196BDB3B0058946B /* TinyPush.app */,
-				933289F0196BDB3B0058946B /* TinyPushTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -148,24 +123,6 @@
 			productReference = 933289CF196BDB3B0058946B /* TinyPush.app */;
 			productType = "com.apple.product-type.application";
 		};
-		933289EF196BDB3B0058946B /* TinyPushTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 93328A04196BDB3B0058946B /* Build configuration list for PBXNativeTarget "TinyPushTests" */;
-			buildPhases = (
-				933289EC196BDB3B0058946B /* Sources */,
-				933289ED196BDB3B0058946B /* Frameworks */,
-				933289EE196BDB3B0058946B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				933289F6196BDB3B0058946B /* PBXTargetDependency */,
-			);
-			name = TinyPushTests;
-			productName = TinyPushTests;
-			productReference = 933289F0196BDB3B0058946B /* TinyPushTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -175,11 +132,6 @@
 				CLASSPREFIX = XC;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = XcakeLabs;
-				TargetAttributes = {
-					933289EF196BDB3B0058946B = {
-						TestTargetID = 933289CE196BDB3B0058946B;
-					};
-				};
 			};
 			buildConfigurationList = 933289CA196BDB3B0058946B /* Build configuration list for PBXProject "TinyPush" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -195,7 +147,6 @@
 			projectRoot = "";
 			targets = (
 				933289CE196BDB3B0058946B /* TinyPush */,
-				933289EF196BDB3B0058946B /* TinyPushTests */,
 			);
 		};
 /* End PBXProject section */
@@ -208,13 +159,6 @@
 				933289EB196BDB3B0058946B /* Images.xcassets in Resources */,
 				933289DD196BDB3B0058946B /* InfoPlist.strings in Resources */,
 				933289E6196BDB3B0058946B /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		933289EE196BDB3B0058946B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,22 +175,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		933289EC196BDB3B0058946B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		933289F6196BDB3B0058946B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 933289CE196BDB3B0058946B /* TinyPush */;
-			targetProxy = 933289F5196BDB3B0058946B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		933289DB196BDB3B0058946B /* InfoPlist.strings */ = {
@@ -284,7 +213,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -322,7 +251,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -364,46 +293,6 @@
 			};
 			name = Release;
 		};
-		93328A05196BDB3B0058946B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TinyPush.app/TinyPush";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TinyPush/TinyPush-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TinyPushTests/TinyPushTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		93328A06196BDB3B0058946B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TinyPush.app/TinyPush";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TinyPush/TinyPush-Prefix.pch";
-				INFOPLIST_FILE = "TinyPushTests/TinyPushTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -421,14 +310,6 @@
 			buildConfigurations = (
 				93328A02196BDB3B0058946B /* Debug */,
 				93328A03196BDB3B0058946B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		93328A04196BDB3B0058946B /* Build configuration list for PBXNativeTarget "TinyPushTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93328A05196BDB3B0058946B /* Debug */,
-				93328A06196BDB3B0058946B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
