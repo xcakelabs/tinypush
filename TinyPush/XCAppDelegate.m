@@ -12,6 +12,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Register with iOS for notifications
+    //
     UIRemoteNotificationType notificationTypes = UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound;
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:notificationTypes];
 
@@ -19,14 +21,20 @@
 }
 
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Registration succeeded, meaning we have the correct APNS permissions
+    // in our app
     NSLog(@"Registered for device token: %@", [self hexify:deviceToken]);
 }
 
 -(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    // Registration failed, meaning we do not have the correct APNS permissions
+    // in our app, so we need to set them up in the developer portal. Of course,
+    // this registration will also fail when we are running in the simulator!
     NSLog(@"Did not successfully register app for push notifications: %@", [[error userInfo] description]);
 }
 
 -(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    // The app has woken up with a push notification
     NSLog(@"Received a push notification: %@", [userInfo description]);
 }
 
